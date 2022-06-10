@@ -1,0 +1,13 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 3em;
+  color: #333;
+}
+
+.container > em {
+  color: tomato;
+  margin: 0 12px;
+}
