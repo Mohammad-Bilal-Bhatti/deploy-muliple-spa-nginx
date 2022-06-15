@@ -2,6 +2,26 @@
 
 This example will show how nginx can serve multiple different application on single virtual server using location mapping. This example will specifically focus on application powered by react. Although the method will be similar for others apps too.
 
+> NOTE: Use `auto-generate-build.sh` for build automation. Creates build with required entrypoint and copies build accordingly. Use this if you want to save time.
+
+Dependencies of the above script
+- jq | json processor
+
+For downloading jq utility
+
+Linux
+```js
+$ apt update
+$ apt install jq
+```
+
+MacOs
+```js
+$ brew install jq
+```
+
+If you are using `auto-generate-build.sh` you don't have to create build manually or have to follow the below steps.
+
 
 Following are the changes which are required to do before creating build.
 
@@ -75,7 +95,7 @@ Prerequisites to run the application
 - Curl utility
 - Bash
 
-NOTE: Before running the application you have to create the build manually by hand and place them to the required directory specified in `nginx/nginx.conf` or run the bash script by `$ ./auto-generate-build.sh` *FEATURE UNAVAILABLE FOR NOW*
+NOTE: Before running the application you have to create the build manually by hand and place them to the required directory specified in `nginx/nginx.conf` or run the bash script by `$ ./auto-generate-build.sh` *FEATURE AVAILABLE FOR NOW*
 
 
 Start and run application
